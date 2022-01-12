@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/tt-plant-in/static/css/main.1c1771b7.css",
+    "main.js": "/tt-plant-in/static/js/main.85c0dd63.js",
+    "static/media/search-img.svg": "/tt-plant-in/static/media/search-img.66ec97493172bd2ec8ba.svg",
+    "static/media/user.svg": "/tt-plant-in/static/media/user.1ede28b5846a14689aee.svg",
+    "static/media/menu.svg": "/tt-plant-in/static/media/menu.32a4a73131a0a1381dde.svg",
+    "index.html": "/tt-plant-in/index.html",
+    "static/media/search.svg": "/tt-plant-in/static/media/search.282e9ddb30d2a470eb89.svg",
+    "main.1c1771b7.css.map": "/tt-plant-in/static/css/main.1c1771b7.css.map",
+    "main.85c0dd63.js.map": "/tt-plant-in/static/js/main.85c0dd63.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c1771b7.css",
+    "static/js/main.85c0dd63.js"
+  ]
+}
