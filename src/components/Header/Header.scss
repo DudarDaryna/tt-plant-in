@@ -1,0 +1,141 @@
+@import '../../styles/utils';
+
+.header {
+  margin-bottom: 64px;
+  padding: 20px 0;
+
+  background-color: #fff;
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1), 0 0.4px 6.5px rgba(0, 0, 0, 0.05);
+}
+
+.nav {
+  display: none;
+
+  &--open {
+    padding: 28px 0;
+    display: block;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: #fff;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $dark-gray;
+    transition: color $transition-duration;
+
+    &:hover {
+      color: $primary-green;
+    }
+  }
+
+  @include onDesktop {
+    display: block;
+
+    &__list {
+      flex-direction: row;
+      gap: 24px;
+    }
+  }
+}
+
+.top-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__action-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include onDesktop {
+      gap: 40px;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &__logo-text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: $dark-gray;
+  }
+
+  @include onDesktop {
+    display: none;
+  }
+}
+
+.icon {
+  display: block;
+  width: $icon-size-mobile;
+  height: $icon-size-mobile;
+
+  background: center / contain no-repeat;
+
+  transition: transform $transition-duration;
+
+  &:hover {
+    transform: scale(110%);
+  }
+
+  @include onDesktop {
+    width: $icon-size-desktop;
+    height: $icon-size-desktop;
+  }
+
+  &--search {
+    background-image: url('../../../public/images/search.svg');
+  }
+
+  &--menu {
+    background: center no-repeat;
+    background-image: url('../../../public/images/menu.svg');
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &--user {
+    display: none;
+    background-image: url('../../../public/images/user.svg');
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+
+  &--cross {
+    position: fixed;
+    top: 28px;
+    right: 16px;
+    background-image: url('../../../public/images/cross.png');
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+}
+
