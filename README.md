@@ -1,12 +1,15 @@
 # PlantIn Landing Page
 
 Responsive landing page with adaptive design for desktop and mobile
-[Demo link](https://dudardaryna.github.io/tt-plant-in/)
+
+[DEMO-LINK](https://dudardaryna.github.io/tt-plant-in/)
 
 [Figma design](https://www.figma.com/file/KtzICEGlTEoXBJlD1Vid8X/PlantIn%2F-Test-Case?node-id=1%3A37)
 
 ### Technologies
--React, JS, SCSS
+
+- React/JS/SCSS
+- BEM methodology
 
 ## Implemented functionality
 
