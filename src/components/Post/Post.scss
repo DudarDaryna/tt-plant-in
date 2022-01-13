@@ -1,0 +1,75 @@
+@import '../../styles/utils';
+
+.Post {
+  border-radius: 12px;
+  transition: background-color ease $transition-duration;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #eee;
+
+    .Post__content {
+      transform: scale(95%);
+    }
+  }
+
+  &__content {
+    transition: transform ease $transition-duration;
+
+    &--desktop {
+      @include onDesktop {
+        display: flex;
+        gap: 30px;
+      }
+    }
+  }
+
+  &__img-wrapper {
+    margin-bottom: 16px;
+    border-radius: 12px;
+
+    &--desktop {
+      @include onDesktop {
+        width: 640px;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    @include onDesktop {
+      object-fit: cover;
+      overflow: hidden;
+    }
+
+    &--desktop {
+      @include onDesktop {
+        width: min-content;
+      }
+    }
+  }
+
+  &__date {
+    font-size: 16px;
+    color: $gray-date-text;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+
+    &--desktop {
+      @include onDesktop {
+        font-size: 48px;
+        line-height: 72px;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    color: $gray-post-text;
+  }
+}

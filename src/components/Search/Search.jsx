@@ -22,8 +22,9 @@ export const Search = ({
   }, []);
 
   return (
+  <section className="Search">
     <div className="container">
-      <section className="Search">
+      <div className="Search__content">
         <h3 className="Search__title">
           Stay always tuned with planting trends
         </h3>
@@ -40,12 +41,14 @@ export const Search = ({
             id="search"
             className="Search__search-input"
             type="text"
+            autoComplete="off"
             value={searchQuery}
             onChange={(event) => changeSearchQuery(event.target.value)}
             placeholder="Search"
           />
         </form>
-      </section>
+      </div>
     </div>
+  </section>
   );
 }

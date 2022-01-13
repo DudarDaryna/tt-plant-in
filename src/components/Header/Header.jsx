@@ -1,4 +1,5 @@
 import React from 'react';
+import { Logo } from '../Logo/Logo';
 import './Header.scss';
 
 export const Header = () => {
@@ -6,16 +7,8 @@ export const Header = () => {
     <header className="header">
       <div className="container">
         <div className="top-actions header__top-actions">
-          <div className="top-actions__logo logo">
-            <a href="#home" className="logo">
-              <img
-                src="./images/logo.svg"
-                alt="PlantIn logo"
-              ></img>
-              <span className="logo__logo-text">
-                PlantIn
-              </span>
-            </a>
+          <div className="top-actions__logo">
+            <Logo />
           </div>
 
           <nav className="header__nav nav" id="nav">
@@ -36,7 +29,7 @@ export const Header = () => {
                 </a>
               </li>
               <li className="nav__item">
-                <a href="#blog" className="nav__link">
+                <a href="#blog" className="nav__link nav__link--active">
                   Blog
                 </a>
               </li>
@@ -56,7 +49,7 @@ export const Header = () => {
           </nav>
           <div className="top-actions__action-icons">
             <div>
-              <a href="#search" className="icon icon--search"></a>
+              <a href="#search" className="icon icon--search"/>
             </div>
             <div>
               <a
@@ -66,7 +59,7 @@ export const Header = () => {
               </a>
             </div>
             <div>
-              <a href="#user" className="icon icon--user"></a>
+              <a href="#user" className="icon icon--user"/>
             </div>
           </div>
         </div>

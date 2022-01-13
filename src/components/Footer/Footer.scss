@@ -1,0 +1,75 @@
+@import '../../styles/utils';
+@import '../../styles/blocks/container.scss';
+
+.Footer {
+  &__content {
+    margin-bottom: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+    color: $section-mark;
+
+    @include onDesktop {
+      margin-bottom: 82px;
+      flex-direction: row;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    @include onDesktop {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    @include onDesktop {
+      font-size: 14px;
+      line-height: 20px;
+
+      &:not(:last-child) {
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          width: 1px;
+          height: 20px;
+          transform: translateX(24px);
+          background-color: $section-mark;
+        }
+      }
+    }
+
+    @include onDesktop {
+      padding: 0 0 8px 0;
+    }
+  }
+
+  &__link {
+    color: $section-mark;
+    transition: color ease $transition-duration;
+
+    cursor: pointer;
+
+    &:hover {
+      color: $gray-post-text;
+    }
+  }
+
+  &__copyright {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

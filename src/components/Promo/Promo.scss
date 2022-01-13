@@ -1,0 +1,93 @@
+@import '../../styles/utils';
+@import '../../styles/blocks/container.scss';
+
+.Promo {
+  margin-bottom: 24px;
+
+  &__content {
+    position: relative;
+    padding: 16px;
+  
+    border-radius: 16px;
+    background-color: rgba(4, 191, 148, 0.16);
+  
+    @include onDesktop {
+      padding: 24px;
+      background: linear-gradient(90deg, rgba(207, 237, 230, 1) 7.49%, rgba(140, 222, 203, 0.8327) 100%);
+    }
+  }
+
+  &__logo {
+    margin-bottom: 16px;
+
+    @include onDesktop {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    color: $primary-green;
+
+    @include onDesktop {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 48px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+    @include onDesktop {
+      margin-bottom: 32px;
+      width: max-content;
+    }
+  }
+
+  &__button {
+    padding: 8px 32px;
+    width: 100%;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+
+    background: $primary-green;
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: background-color ease $transition-duration;
+
+    &:hover {
+      background-color: #03ac84;
+    }
+
+    @include onDesktop {
+      width: max-content;
+    }
+  }
+
+  &__img {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: -16px;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+}

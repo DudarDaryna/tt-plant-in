@@ -1,0 +1,9 @@
+.container {
+  max-width: $max-width-desktop;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @include onDesktop {
+    padding: 0 60px;
+  }
+}
